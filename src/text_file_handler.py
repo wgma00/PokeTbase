@@ -60,7 +60,7 @@ def parse_file(file):
 def retrieve_teams():
   ''' () -> list of team object
   '''
-  file_paths = glob.glob('teams//*.txt')
+  file_paths = glob.glob('..//database//overused//*.txt')
   ret = []
   current_path = ''
   try:
