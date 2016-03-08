@@ -4,6 +4,11 @@ PokéTbase is software that allows competitive pokemon players the freedom to
 cross reference an opponents team with teams in the forums or the user's own
 collection of teams.
 
+Support
+=================================
+The default database currently supports the following smogon tiers
+Overused
+
 License
 =================================
 MIT Liscence
