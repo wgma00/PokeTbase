@@ -33,16 +33,16 @@ class Database(object):
         self._database[str(team.getTeamMembers())] = team
 
   def query(self, team):
-    ''' (list of str) -> team
+    ''' ([str]) -> team
         checks if the team is in the database
     '''
     # sort team to make hash compliant with the database's hashses
     team.sort()
     team = str(team)
     if team in self._database:
-       return self._database[team]
+        return self._database[team]
     else:
-       return None
+        return None
 
 
 if __name__ == '__main__':
