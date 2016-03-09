@@ -14,7 +14,12 @@ https://www.riverbankcomputing.com/software/pyqt/download
 Support
 =================================
 The default database currently supports the following smogon tiers.
-Overused
+
+[]Uber
+[x]Overused
+[]Underused
+[]Rarelyused
+[]Neverused
 
 License
 =================================
