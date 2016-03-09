@@ -18,10 +18,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from team_database import database
+from team_database import Database
 
 def main():
-  d = database()
+  d = Database()
   print('Welcome to the team lookup!')
   print('Here we will check if a team is currently within our database')
   print('All you have to do is enter the name of six pokemon and we will check')

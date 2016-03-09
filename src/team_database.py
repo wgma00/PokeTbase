@@ -20,7 +20,7 @@
 
 import text_file_handler
 
-class database:
+class Database(object):
   ''' This class will hold all available teams currently in the forum
   '''
   def __init__(self):
@@ -36,6 +36,7 @@ class database:
     ''' (list of str) -> team
         checks if the team is in the database
     '''
+    # sort team to make hash compliant with the database's hashses
     team.sort()
     team = str(team)
     if team in self._database:
@@ -45,7 +46,7 @@ class database:
 
 
 if __name__ == '__main__':
-  d = database()
+  d = Database()
   q = ['Excadrill', 'Heatran', 'Latios-Mega (M)', 'Manaphy', 'Tangrowth', \
   'Tyranitar']
   print(d.query(q))

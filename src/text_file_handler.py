@@ -18,11 +18,13 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from team import team
+from team import Team
 import glob
+import os
 
 def parse_file(file):
   ''' (IO.TextWrapper) -> team
+       REQD: each file have at minimum 6 members on the team
   '''
   team_description = ''
   team_members = []
@@ -33,11 +35,11 @@ def parse_file(file):
   while(line != 'team-start-line\n'):
         if(line != '\n' and line != 'description-start-line\n'):
            team_description += line
-           #print(line,end='')
         line = file.readline()
   # we will now start reading in the actual team
   line = file.readline()
-  while(line != ''):
+
+  while(line != '' and len(team_members) < 6):
       pokemon_info = []
       while(line != '\n'):
           pokemon_info.append(line)
@@ -54,13 +56,13 @@ def parse_file(file):
       #print(team_sets[pokemon_name])
       line = file.readline()
   # now to finalize the current team and return
-  ret = team(team_description, team_members, team_sets)
+  ret = Team(team_description, team_members, team_sets)
   return ret
 
 def retrieve_teams():
   ''' () -> list of team object
   '''
-  file_paths = glob.glob('..//database//overused//*.txt')
+  file_paths = glob.glob('../res/overused/*.txt')
   ret = []
   current_path = ''
   try:
@@ -68,6 +70,7 @@ def retrieve_teams():
           file = open(path)
           current_path = path
           ret.append(parse_file(file))
+          file.close()
   except Exception as e:
      print(current_path)
      print(e)
@@ -77,7 +80,5 @@ def retrieve_teams():
 # debugging happens here
 if __name__ == '__main__':
    ret = retrieve_teams()
-   team = ret[0]
-   print(team.getTeamMembers())
-   print(team.getTeamMembers())
+
    #print)

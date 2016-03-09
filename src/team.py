@@ -18,15 +18,15 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-class team:
-  ''' This class will hold a brief team description and the members of the each
-      respective team along with their sets.
+class Team(object):
+  '''This class will hold a brief team description and the members of the each
+  respective team along with their sets.
   '''
 
 
   def __init__(self, team_description, team_members, team_sets):
-    ''' (str, [str], {str:str}) -> None
-        Creates a basic team
+    '''(Team, str, [str], {str:str}) -> None
+    Creates a basic team
     '''
     self._team_description = team_description
     self._team_members = team_members
@@ -35,13 +35,15 @@ class team:
 
 
   def __hash__(self):
-    '''  uses md5 hashing algorithm to hash the name of the members
+    '''(Team) -> None
+    Uses pythons built in hash function to make a hash for the team
     '''
     return hash(str(team_members))
 
 
   def __str__(self):
-    ''' returns a string representaiton of everything
+    ''' (Team) -> None
+    Returns a string representaiton of everything
     '''
     ret = 'Team Description:\n'
     ret += str(self._team_description) + '\n'
@@ -69,19 +71,19 @@ class team:
 
 
 
-#debugging goes on here
-# if __name__ == '__main__':
-#    sample_set = 'Azumarill @ Choice Band \n \
-#                 Ability: Huge Power \n \
-#                 EVs: 172 HP / 252 Atk / 84 Spe \n \
-#                 Adamant Nature \n \
-#                 - Play Rough \n \
-#                 - Waterfall \n \
-#                 - Aqua Jet\n \
-#                 - Superpower'
-#    team_description = 'testing team'
-#    team_members = ['azumarill','charizard']
-#    team_sets = {'azumarill':sample_set,'charizard':'dragon claw'}
-#    myteam = team(team_description,team_members,team_sets)
-#    database = {myteam:1}
-#    print(myteam)
+# debugging goes on here
+if __name__ == '__main__':
+   sample_set = 'Azumarill @ Choice Band \n \
+                Ability: Huge Power \n \
+                EVs: 172 HP / 252 Atk / 84 Spe \n \
+                Adamant Nature \n \
+                - Play Rough \n \
+                - Waterfall \n \
+                - Aqua Jet\n \
+                - Superpower'
+   team_description = 'testing team'
+   team_members = ['azumarill','charizard']
+   team_sets = {'azumarill':sample_set,'charizard':'dragon claw'}
+   myteam = Team(team_description,team_members,team_sets)
+   database = {myteam:1}
+   print(myteam)
