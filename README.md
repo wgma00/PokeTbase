@@ -16,10 +16,15 @@ Support
 The default database currently supports the following smogon tiers.
 
 []Uber
+
 [x]Overused
+
 []Underused
+
 []Rarelyused
+
 []Neverused
+
 
 License
 =================================
@@ -49,5 +54,5 @@ SOFTWARE.
 Screenshot
 =================================
 <p align="center">
-  <img src="https://raw.githubusercontent.com/wgma00/PokeTbase/master/res/screenshot/screenshot1.jpg" alt="PokeTbase Layout"/>
+  <img src="https://raw.githubusercontent.com/wgma00/PokeTbase/master/res/screenshot/screenshot2.png" alt="PokeTbase Layout"/>
 </p>
