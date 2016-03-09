@@ -12,6 +12,9 @@ https://www.riverbankcomputing.com/software/pyqt/download
 
 Screenshot
 =================================
+<p align="center">
+  <img src="https://raw.githubusercontent.com/wgma00/PokeTbase/master/res/screenshot/screenshot1.jpg" alt="PokeTbase Layout"/>
+</p>
 
 Support
 =================================
