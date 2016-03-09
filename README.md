@@ -8,17 +8,12 @@ Requirements
 =================================
 This project is currently utilizing PyQt4, depending on your operating system
 of choice the installation process will be different.
-https://www.riverbankcomputing.com/software/pyqt/download
 
-Screenshot
-=================================
-<p align="center">
-  <img src="https://raw.githubusercontent.com/wgma00/PokeTbase/master/res/screenshot/screenshot1.jpg" alt="PokeTbase Layout"/>
-</p>
+https://www.riverbankcomputing.com/software/pyqt/download
 
 Support
 =================================
-The default database currently supports the following smogon tiers
+The default database currently supports the following smogon tiers.
 Overused
 
 License
@@ -46,3 +41,8 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+Screenshot
+=================================
+<p align="center">
+  <img src="https://raw.githubusercontent.com/wgma00/PokeTbase/master/res/screenshot/screenshot1.jpg" alt="PokeTbase Layout"/>
+</p>
