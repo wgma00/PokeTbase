@@ -4,6 +4,15 @@ PokéTbase is software that allows competitive pokemon players the freedom to
 cross reference an opponents team with teams in the forums or the user's own
 collection of teams.
 
+Requirements
+=================================
+This project is currently utilizing PyQt4, depending on your operating system
+of choice the installation process will be different.
+https://www.riverbankcomputing.com/software/pyqt/download
+
+Screenshot
+=================================
+
 Support
 =================================
 The default database currently supports the following smogon tiers
