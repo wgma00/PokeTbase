@@ -49,6 +49,7 @@ if __name__ == '__main__':
   d = Database()
   q = ['Excadrill', 'Heatran', 'Latios-Mega (M)', 'Manaphy', 'Tangrowth', \
   'Tyranitar']
+  q = ['Azumarill', 'Garchomp', 'Heatran', 'Latias', 'Reuniclus', 'Venusaur']
   print(d.query(q))
   # Yay, I'm finally done (It was almost 7am when I finished this, please
   # understand my joy)
