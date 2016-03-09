@@ -280,6 +280,7 @@ Pelipper
 Ralts
 Kirlia
 Gardevoir
+Gardevoir-Mega
 Surskit
 Masquerain
 Shroomish
@@ -379,6 +380,7 @@ Regice
 Registeel
 Latias
 Latios
+Latios-Mega (M)
 Kyogre
 Groudon
 Rayquaza
