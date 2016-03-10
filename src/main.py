@@ -30,7 +30,7 @@ class Window(QtGui.QMainWindow):
 
     def __init__(self):
         # members
-        self._user_input = ['' for i in range(6)]
+        self._user_input = ['Abomasnow' for i in range(6)]
         self._database = Database()
         # gui members
         super(Window, self).__init__()
