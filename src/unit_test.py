@@ -7,8 +7,8 @@
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
 #
-# The above copyright notice and this permission notice shall be included in all
-# copies or substantial portions of the Software.
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
 #
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -22,13 +22,15 @@ from team import Team
 from team_database import Database
 import unittest
 
+
 class DatabaseTest(unittest.TestCase):
     def test_query(self):
         '''(DatabaseTest)->None
         Checks if the query for pokemon is working fine
         '''
         database = Database()
-        query = ['Excadrill', 'Heatran', 'Latios-Mega (M)', 'Manaphy', 'Tangrowth', 'Tyranitar']
+        query = ['Excadrill', 'Heatran', 'Latios-Mega (M)', 'Manaphy',
+                 'Tangrowth', 'Tyranitar']
         ret = database.query(query)
         file = open('../res/overused/dd-m-latios-sand-balance-by-halcyon.txt')
         print(file)
@@ -37,4 +39,3 @@ class DatabaseTest(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
