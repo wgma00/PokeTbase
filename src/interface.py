@@ -137,27 +137,27 @@ class Window(QtGui.QMainWindow):
                 self.output_editor(str(self._user_input) + '\n' + 'sorry')
 
     def user_choice_one(self, text):
-        '''(Window) -> None'''
+        '''(Window, str) -> None'''
         self._user_input[0] = text.strip()
 
     def user_choice_two(self, text):
-        '''(Window) -> None'''
+        '''(Window, str) -> None'''
         self._user_input[1] = text.strip()
 
     def user_choice_three(self, text):
-        '''(Window) -> None'''
+        '''(Window, str) -> None'''
         self._user_input[2] = text.strip()
 
     def user_choice_four(self, text):
-        '''(Window) -> None'''
+        '''(Window, str) -> None'''
         self._user_input[3] = text.strip()
 
     def user_choice_five(self, text):
-        '''(Window) -> None'''
+        '''(Window, str) -> None'''
         self._user_input[4] = text.strip()
 
     def user_choice_six(self, text):
-        '''(Window) -> None'''
+        '''(Window, str) -> None'''
         self._user_input[5] = text.strip()
 
 
