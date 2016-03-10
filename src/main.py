@@ -40,12 +40,14 @@ class Window(QtGui.QMainWindow):
         self.init_editor()
         self.layout.addStretch()
         self.show()
+        
 
     def init_UI(self):
         '''(Window) -> None
         Sets the dimensions and user interface
         '''
         self.setGeometry(150, 150, 300, 210)
+        self.setFixedSize(300, 210)
         self.setWindowTitle('PokéTbase - Pokémon Team Database')
         self.setWindowIcon(QtGui.QIcon('../res/icon/pikachu_icon.png'))
         self.layout = QtGui.QHBoxLayout()
