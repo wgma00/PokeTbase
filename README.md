@@ -28,7 +28,6 @@ The default database currently supports the following smogon tiers.
 
 License
 =================================
-MIT Liscence
 The MIT License (MIT)
 
 Copyright (c) 2016 William Granados
