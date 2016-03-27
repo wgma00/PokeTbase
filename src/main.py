@@ -136,7 +136,7 @@ class Window(QtGui.QMainWindow):
             if(query is not None):
                 self.output_editor(str(query))
             else:
-                self.output_editor(str(self._user_input) + '\n' + 'sorry')
+                self.output_editor(str(self._user_input) + '\n' + 'Sorry - No teams found.')
 
     def user_choice_one(self, text):
         '''(Window, str) -> None'''
